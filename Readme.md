@@ -10,6 +10,9 @@
 `docker run [-d] [-it] [--rm] [--name NAME] [-p PORT_HOST:PORT_CONTAINER] CONTAINER|UUID`
 
 #
+`docker logs CONTAINER`
+
+#
 `docker exec [-it] CONTAINER|UUID COMMAND`
 
 `docker attach CONTAINER|UUID`
@@ -31,7 +34,7 @@
 `docker run [--mount type=VOLUME_NAME,source=VOLUME,target=PATH_CONTAINER] CONTAINER|UUID`
 
 #
-`docker pull IMAGE_NAME`
+`docker [pull|push] IMAGE_NAME`
 
 #
 `docker images [-q]`
