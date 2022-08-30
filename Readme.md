@@ -56,3 +56,6 @@
 
 #
 `docker system prune`
+
+#
+`docker-compose [-f FILENAME] [up|down|ps] [-d] [--build]`

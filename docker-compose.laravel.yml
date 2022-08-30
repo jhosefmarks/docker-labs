@@ -1,0 +1,27 @@
+version: '3'
+
+services:
+
+  laravel:
+    build:
+      context: ./laravel
+      dockerfile: Dockerfile.prod
+    image: jhosefmarks/laravel:prod
+    container_name: laravel
+    networks:
+      - jmnet
+
+  nginx:
+    build:
+      context: ./nginx
+      dockerfile: Dockerfile.prod
+    image: jhosefmarks/nginx:prod
+    container_name: nginx
+    networks:
+      - jmnet
+    ports:
+      - "8080:80"
+
+networks:
+  jmnet:
+    driver: bridge
