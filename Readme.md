@@ -53,3 +53,6 @@
 `docker run --network NETWORK_NAME IMAGE_NAME`
 
 `docker network [connect|disconnect] NETWORK_NAME CONTAINER`
+
+#
+`docker system prune`
